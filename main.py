@@ -75,3 +75,13 @@ def fast_medic():
         pyautogui.press(enter_key)
 
 
+# Function to perform throwing a grenade action when the 'v' key is pressed.
+# This function simulates picking up and throwing a grenade in the game when the 'v' key is pressed.
+def throwing_grenad():
+    if keyboard.is_pressed(grenad_script):
+        pyautogui.press(grenade_key)
+        pyautogui.click()
+        time.sleep(0.60)
+        pyautogui.click()
+
+
