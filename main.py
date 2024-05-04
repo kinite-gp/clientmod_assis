@@ -66,3 +66,12 @@ def hold_rev():
         pyautogui.keyUp(rev_key)
 
 
+# Function to perform actions when the 'n' key is pressed.
+# Pressing 'y' to open the in-game chat and typing "!medic" command to Refill health for yourself.
+def fast_medic():
+    if keyboard.is_pressed(medic_script):
+        pyautogui.press(chat_key)
+        pyautogui.typewrite(medic_command)
+        pyautogui.press(enter_key)
+
+
