@@ -36,3 +36,15 @@ grenad_script = "alt"
 pyautogui.FAILSAFE = False
 
 
+# Function to toggle the power switch when the 'p' key is pressed.
+# This function changes the state of the 'is_on' variable between True and False
+# and adds a delay of 5 seconds after each press to prevent rapid toggling.
+def power_switch():
+    global is_on
+    if keyboard.is_pressed("delete"):
+        if is_on:
+            is_on = False
+        else:
+            is_on = True
+        time.sleep(5)
+
