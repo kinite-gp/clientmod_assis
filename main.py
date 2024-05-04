@@ -56,3 +56,13 @@ def is_capslock_on():
     return True if ctypes.WinDLL("User32.dll").GetKeyState(capslock_key) else False
 
 
+# Function to simulate holding down the 'e' key if Caps Lock is on, otherwise releasing it.
+# Pressing the 'e' key to perform an action (e.g., reviving teammates) in the game
+# Releasing the 'e' key if Caps Lock is off to stop performing the action.
+def hold_rev():
+    if is_capslock_on():
+        pyautogui.keyDown(rev_key)
+    else:
+        pyautogui.keyUp(rev_key)
+
+
