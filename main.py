@@ -95,3 +95,18 @@ def main():
             throwing_grenad()
 
 
+# This block of code will execute the main function if this script is run directly.
+if __name__ == "__main__":
+    print(banner)
+    print(f"""
+    Press the '{power_script}' button to turn it off and on
+    To close the program, you can close the terminal or use 'ctrl+c' in the terminal
+
+    > 'CapsLock' on/off for reviving teammates
+    > fast medic with '{medic_script}'
+    > throwing grenad with '{grenad_script}'
+        """)
+    try:
+        main()
+    except KeyboardInterrupt:
+        sys.exit()
