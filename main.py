@@ -48,3 +48,11 @@ def power_switch():
             is_on = True
         time.sleep(5)
 
+
+# Function to check if the Caps Lock key is currently on.
+# Using ctypes to access Windows API function GetKeyState to check the state of the Caps Lock key.
+# The parameter 0x14 represents the Caps Lock key.
+def is_capslock_on():
+    return True if ctypes.WinDLL("User32.dll").GetKeyState(capslock_key) else False
+
+
