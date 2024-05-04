@@ -85,3 +85,13 @@ def throwing_grenad():
         pyautogui.click()
 
 
+def main():
+    while True:
+        power_switch()
+        if is_on:
+            time.sleep(0.1)
+            hold_rev()
+            fast_medic()
+            throwing_grenad()
+
+
