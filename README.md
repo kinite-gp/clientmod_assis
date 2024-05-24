@@ -3,6 +3,8 @@
 ```python
 # install pyautogui
 pip install pyautogui
+pip install keyboard
+pip install mouse
 
 # run script
 python main.py
