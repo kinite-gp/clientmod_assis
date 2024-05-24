@@ -7,6 +7,3 @@ pip install pyautogui
 # run script
 python main.py
 ```
-
-
-icon from <`https://www.freeimages.com/`>
